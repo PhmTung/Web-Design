@@ -18,10 +18,28 @@
             <li class="active"><a>Project</a></li>
             <li><a href="#">About Me</a></li>
             <li><a href="#">Contact</a></li>
+            <li><button onclick="talkWithMe()">Let's talk</button></li>
         </ul>
         <div class="name"> 
             <p id="a1">Portfolio</p>
             <p id="a2">2023</p>
+        </div>
+        <div class="background"></div>
+        <div class="let-talk">
+            <img src="../../images/icon/Close_round_duotone.png" class="cancel" onclick="talkWithMe()">
+            <div class="talk-header">
+                <p class="heading">Let's talk</p>
+                <p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <form>
+                <span>Họ và tên</span><br/>
+                <input /><br/>
+                <span>SĐT</span><br/>
+                <input /><br/>
+                <span>Email</span><br/>
+                <input /><br/>
+                <button onclick="talkWithMe()">Send me now</button>
+            </form>
         </div>
     </div>
     <div class="container">
@@ -62,5 +80,6 @@
     </div>
 </div>
 <script src="../../js/project/ui-design.js"></script>
+<script src="../../js/side-bar.js"></script>
 </body>
 </html>

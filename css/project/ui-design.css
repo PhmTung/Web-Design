@@ -135,3 +135,95 @@ body {
 img {
     cursor: pointer;
 }
+.let-talk {
+    position: fixed;
+    width: 500px;
+    height: 400px;
+    top: 25%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 0;
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.talk-header {
+    text-align: center;
+    padding: 0 15%;
+}
+.let-talk .heading {
+    font-size: 24px;
+    color: #000;
+}
+.let-talk .sub-heading {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+}
+.let-talk form {
+    padding: 0 10%;
+}
+.let-talk form span {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+}
+.let-talk form input {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+}
+
+.let-talk form button {
+    margin-left: 150px;
+    margin-top: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(0, 255, 128), 0 0 0px rgb(0, 255, 149), 0 0 0px rgb(27, 147, 245);
+}
+.background {
+    position: fixed;
+    width: 999999px;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.cancel {
+    position: fixed;
+    margin-left: 460px
+}
+.let-talk.active, .background.active {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+.namebar button {
+    background-color: black;
+    cursor: pointer;
+    border-radius: 12px;
+    color: #fff;
+    height: 50px;
+    width: 115px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    border-style: solid;
+    border-color: transparent;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to right bottom, #1C86E8, #36DDE8, #4FDA9F, #BFFF6F) border-box;
+}
+
+.namebar button:hover {
+    background: linear-gradient(rgb(44, 44, 44), rgb(44, 44, 44)) padding-box, linear-gradient(to right bottom, #1C86E8, #36DDE8, #4FDA9F, #BFFF6F) border-box;
+    box-shadow: 0 0 5px rgb(0, 255, 128),
+0 0 25px rgb(0, 255, 149), 0 0 50px rgb(27, 147, 245);
+}
+.namebar button:active {
+    transform: scale(0.96)
+}
