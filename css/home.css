@@ -82,7 +82,7 @@ body {
     font-size: 32px;
 }
 .TU {
-    height: 820px;
+    height: 780px;
     width: auto;
     position: relative;
     right: 1px;
@@ -96,7 +96,7 @@ body {
     to{margin-right: 0%;}
 }
 .N {
-    height: 820px;
+    height: 780px;
     width: auto;
     position: relative;
     right: 148px;
@@ -105,7 +105,7 @@ body {
     opacity: 0;
 }
 .G {
-    height:820px;
+    height:780px;
     width: auto;
     position: relative;
     right: 151px;
@@ -165,8 +165,89 @@ body {
     color: #a3a3a3;
 }
 
-.active a {
+li.active a {
     font-size: 32px;
     color: #fff;
     font-weight: bold;
 }
+
+.menu-icon {
+    position: absolute;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 375px) {
+    .menu-icon {
+        position: absolute;
+        visibility: visible;
+        right: 15px;
+        top: 56px;
+    }
+    .arrow-icon {
+        position: absolute;
+        right: 15px;
+        top: 56px;
+    }
+    .sidebar {
+        width: 0%;
+        visibility: hidden;
+    }
+   .sidebar.active {
+    visibility: visible;
+    z-index: 5;
+    width: 100%;
+    position: fixed;
+   }
+   .container {
+    width: 100%;
+   }
+   .TU {
+    height: 350px;
+    width: 220px;
+    left: 0;
+    position: absolute;
+   }
+   .N {
+    height: 330px;
+    width: auto;
+    position: absolute;
+    right: 125px;
+    top: 350px;
+   }
+   .G {
+    height: 330px;
+    width: auto;
+    position: absolute;
+    right: 0px;
+    top: 350px;
+   }
+   .container .infor p.dam {
+    font-size: 10px;
+    font-weight: bold;
+   }
+   .container .infor p {
+    font-size: 12px;
+    font-weight: bold;
+   }
+   .button {
+    top: 285px;
+    right: 27px;
+    width: 115px;
+    height: 50px;
+    font-size: 16px;
+   }
+   li a {
+    font-size: 18px;
+    color: #a3a3a3;
+   }
+   li.active a {
+    color: #fff;
+    font-size: 24px;
+   }
+   #a2 {
+    font-size: 96px;
+   }
+   #a1 {
+    font-size: 21px;
+   }
+  }

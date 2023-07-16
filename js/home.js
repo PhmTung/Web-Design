@@ -8,3 +8,7 @@ const gShow = setTimeout(()=> {
     document.querySelector(".G").classList.add("show")
 }, 1000)
 
+function openSideBar() {
+    document.querySelector(".sidebar").classList.toggle("active")
+}
+
