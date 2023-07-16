@@ -146,6 +146,7 @@ body {
     
 }
 
+
 .button:hover {
     background: linear-gradient(rgb(44, 44, 44), rgb(44, 44, 44)) padding-box, linear-gradient(to right bottom, #1C86E8, #36DDE8, #4FDA9F, #BFFF6F) border-box;
     box-shadow: 0 0 5px rgb(0, 255, 128),
