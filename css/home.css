@@ -182,6 +182,7 @@ li.active a {
         visibility: visible;
         right: 15px;
         top: 56px;
+        z-index: 6;
     }
     .arrow-icon {
         position: absolute;
