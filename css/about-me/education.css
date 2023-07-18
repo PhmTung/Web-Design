@@ -166,22 +166,22 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
 }
-.nam2023 {
+.nam {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.nam2022 {
+.nam {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.nam2021 {
+.nam {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.nam2019 {
+.nam {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
@@ -317,7 +317,7 @@ a {
     background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to right bottom, #1C86E8, #36DDE8, #4FDA9F, #BFFF6F) border-box;
 }
 .let-talk {
-    position: fixed;
+    position: absolute;
     width: 500px;
     height: 400px;
     top: 25%;
@@ -408,4 +408,161 @@ a {
 }
 .namebar button:active {
     transform: scale(0.96)
+}
+.arrow-icon, .menu-icon {
+    visibility: hidden;
+    position: absolute;
+}
+
+@media only screen and (max-width: 375px) {
+    .menu-icon {
+        position: absolute;
+        visibility: visible;
+        right: 15px;
+        top: 25px;
+        z-index: 5;
+    }
+    .arrow-icon {
+        position: absolute;
+        visibility: visible;
+        right: 15px;
+        top: 56px;
+    }
+    .sidebar {
+        width: 0%;
+        visibility: hidden;
+    }
+   .sidebar.active {
+    visibility: visible;
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+   }
+   li a {
+    font-size: 18px;
+    color: #a3a3a3;
+   }
+   .active a {
+    font-size: 24px;
+    color: #A3A3A3;
+    font-weight: 400;
+   }
+   li.active a {
+    color: #fff;
+    font-size: 32px;
+   }
+   #a2 {
+    font-size: 96px;
+   }
+   #a1 {
+    font-size: 21px;
+   }
+   .thongtin {
+    width: 100%;
+   }
+   .container-header .header-item {
+    width: 125px;
+    height: 24px;
+    font-size: 10px;
+   }
+   .anh img {
+    width: 327px;
+    height: 312px;
+   }
+   .chitiet {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 56px;
+   }
+   .thongtin .chitiet p {
+    font-size: 10px;
+    color: #a3a3a3;
+   }
+   .thongtin .chitiet p.infor {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 4px;
+   }
+   .chitiet1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 10px;
+   }
+   .self {
+    margin-bottom: 10px;
+    position: relative;
+    right: 10px;
+   }
+   body > div.mainscreen > div.thongtin > div.chitiet > div.chitiet1 > div:nth-child(2) {
+    position: relative;
+    right: 65px;
+   }
+   body > div.mainscreen > div.thongtin > div.chitiet > div.chitiet1 > div:nth-child(4) {
+    position: relative;
+    right: 40px;
+   }
+   .container .container-header {
+    padding-top: 30px;
+   }
+   .edu .timeline p {
+    font-size: 18px;
+   }
+   .edu .timeline p.content {
+    font-size: 12px;
+   }
+   .year, .content {
+    margin-bottom: 4px;
+   }
+   .nam {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 8px;
+   }
+   .timeline {
+    justify-content: flex-start;
+    padding: 0 30px
+   }
+   .kynang {
+    flex-direction: column;
+   }
+   .tenkynang {
+    font-size: 16px;
+   }
+   .cackynang {
+    font-size: 14px;
+   }
+   .nhomkynang {
+    width: 100%;
+    padding: 0;
+    margin-left: 10px;
+   }
+   .cackynang {
+    padding: 0 30px;
+   }
+   .let-talk {
+    width: 327px;
+    height: 380px;
+   }
+   .let-talk .sub-heading {
+    font-size: 12px;
+   }
+   .let-talk .heading {
+    font-size: 20px;
+   }
+   .let-talk form input {
+    height: 28px;
+   }
+   .let-talk form span {
+    font-size: 12px;
+   }
+   .let-talk form button {
+    font-size: 12px;
+    margin-left: 80px;
+   }
+   .cancel {
+    margin-left: 290px;
+   }
 }

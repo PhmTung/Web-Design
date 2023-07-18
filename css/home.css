@@ -252,4 +252,27 @@ li.active a {
    #a1 {
     font-size: 21px;
    }
+   .let-talk {
+    width: 327px;
+    height: 380px;
+   }
+   .let-talk .sub-heading {
+    font-size: 12px;
+   }
+   .let-talk .heading {
+    font-size: 20px;
+   }
+   .let-talk form input {
+    height: 28px;
+   }
+   .let-talk form span {
+    font-size: 12px;
+   }
+   .let-talk form button {
+    font-size: 12px;
+    margin-left: 80px;
+   }
+   .cancel {
+    margin-left: 290px;
+   }
   }
