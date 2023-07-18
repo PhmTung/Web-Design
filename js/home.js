@@ -11,4 +11,3 @@ const gShow = setTimeout(()=> {
 function openSideBar() {
     document.querySelector(".sidebar").classList.toggle("active")
 }
-
